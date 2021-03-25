@@ -7,10 +7,10 @@ The OAuth 2.0 authorization framework is a protocol that allows a user to grant 
 JSON Web Tokens are an open, industry standard RFC 7519 method for representing claims securely between two parties.
 
 
-![Alt Text]https://raw.githubusercontent.com/danielemaddaluno/jaxrs-jws-jwt-web/master/images/jwt_auth_flow.png)
+![Alt Text](https://backstage.forgerock.com/docs/am/7/oauth2-guide/images/oauth2-jwt-bearer-authn.svg)
 
 ### Token 
-![Alt Text]https://research.securitum.com/wp-content/uploads/sites/2/2019/10/jwt_ng1_en.png)
+![Alt Text](https://research.securitum.com/wp-content/uploads/sites/2/2019/10/jwt_ng1_en.png)
 The issuer returns a signed JWT to the client. The JWT must contain, at least, the following claims in the payload:
 
          - iss. Specifies the unique identifier of the JWT issuer. This could also be the client, or a third party.
