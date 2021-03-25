@@ -1,8 +1,36 @@
-## oAuth2-Okta-SAML
+## OAuth2-Okta-SAML
 
 The OAuth 2.0 authorization framework is a protocol that allows a user to grant a third-party web site or application access to the user's protected resources.
 
 ------------------------------------
+## JWT:
+JSON Web Tokens are an open, industry standard RFC 7519 method for representing claims securely between two parties.
+
+
+![Alt Text]https://raw.githubusercontent.com/danielemaddaluno/jaxrs-jws-jwt-web/master/images/jwt_auth_flow.png)
+
+### Token 
+![Alt Text]https://research.securitum.com/wp-content/uploads/sites/2/2019/10/jwt_ng1_en.png)
+The issuer returns a signed JWT to the client. The JWT must contain, at least, the following claims in the payload:
+
+         - iss. Specifies the unique identifier of the JWT issuer. This could also be the client, or a third party.
+
+         - sub. Specifies the principal who is the subject of the JWT. Must be set to the client ID.
+
+         - aud. Specifies the authorization server that is the intended audience of the JWT. Must be set to the authorization server's token endpoint. For example,            https://openam.example.com:8443/openam/oauth2/realms/root/access_token.
+
+         - exp. Specifies the expiration time,providing a JWT with an expiry time greater than 30 minutes causes AM to return a JWT expiration time is unreasonable error message.
+
+         - jti. Specifies a random, unique identifier for the JWT.
+
+
+
+
+### Understand JWT in debug
+- https://jwt.io/
+
+------------------------------------
+
 
 ### OAuth Terminology
 
