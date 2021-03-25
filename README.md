@@ -1,8 +1,6 @@
 ## OAuth2-Okta-SAML
 
-The OAuth 2.0 authorization framework is a protocol that allows a user to grant a third-party web site or application access to the user's protected resources.
 
-------------------------------------
 ## JWT:
 JSON Web Tokens are an open, industry standard RFC 7519 method for representing claims securely between two parties.
 
@@ -24,13 +22,35 @@ The issuer returns a signed JWT to the client. The JWT must contain, at least, t
          - jti. Specifies a random, unique identifier for the JWT.
 
 
+### What problem JWT solve :
 
+HTTP is a stateless protocol, when a user makes a request that requires authentication to  web application they will have to pass in their credentials so we can implement a state mechanism, which brings us to sessions
+
+ - Server side session : Server creates a session object on authenication which contains a unique session id, session expiry date, information about the user such as the user id, and any other information you may want to store.
+
+                                    { 
+                                            "id": "qw1e34rt5y", 
+                                            "userId": "abcdxxxaasa",  
+                                            "username": "vkhan", 
+                                            "loginAttempts": 1,
+                                            "expiryDate": "2021-07-08T23:28:56.782Z"
+                                    }
+  ### Issue with session managment 
+                  Problem : If application scale up load balancer can forward call to any server and session management happened in one server 
+                  Solution :  use Redis cache and save all session into Redis so all server can access it.
+
+                  Problem :Redis cache single point of failure , if raids down all session gone
+                  Solution use sticky session on load balancer 
+                  
+  When request JWT to the server then  server will then create a token with a secret key and send it back. The browser stores this token and sends it in the Authorization header   of every subsequent request.
 
 ### Understand JWT in debug
 - https://jwt.io/
 
 ------------------------------------
+The OAuth 2.0 authorization framework is a protocol that allows a user to grant a third-party web site or application access to the user's protected resources.
 
+------------------------------------
 
 ### OAuth Terminology
 
