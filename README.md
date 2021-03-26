@@ -110,7 +110,14 @@ Scopes are what you see on the authorization screens when an app requests permis
 
 
 ------------------------------------
+# JWT VS OAUTH
 
+-  https://github.com/vaquarkhan/vaquarkhan/wiki/JWT-vs-OAuth
+
+------------------------------------
+# OKTA
+
+------------------------------------
 
 
 - https://oauth2.thephpleague.com/
