@@ -1,5 +1,3 @@
-## OAuth2-Okta-SAML
-
 
 ## JWT:
 JSON Web Tokens are an open, industry standard RFC 7519 method for representing claims securely between two parties.
@@ -99,7 +97,7 @@ Grant flow (courtesy: oauth2.thephpleague.com).
 Scopes are what you see on the authorization screens when an app requests permissions. They’re bundles of permissions asked for by the client when requesting a token. These are coded by the application developer when writing the application.
 
 
-# OAuth 2.0 Flows
+### OAuth 2.0 Flows
          1. Authorization Code Flow
          2. Implicit Flow
          3. Resource Owner Password Credentials Flow
@@ -110,20 +108,20 @@ Scopes are what you see on the authorization screens when an app requests permis
 
 
 -------------------------------------------
-# OKTA
+## OKTA
 
 Okta is one trusted platform to secure every identity, from customers to your workforce. Okta connects any person with any application on any device. It's an enterprise-grade, identity management service, built for the cloud, but compatible with many on-premises applications.
 
 - https://developer.okta.com/docs/guides/
 
 ------------------------------------
-# SAML
+## SAML
 Security Assertion Markup Language (SAML) is an open standard that allows identity providers (IdP) to pass authorization credentials to service providers (SP). What that jargon means is that you can use one set of credentials to log into many different websites.
 
 - https://developer.okta.com/docs/concepts/saml/
 
 ------------------------------------
-## OAuth 2.0 vs OpenID Connect vs SAML
+### The Difference among OAuth 2.0 vs OpenID Connect vs SAML
 
 - OAuth 2.0: If you’ve ever signed up to a new application and agreed to let it automatically source new contacts via Facebook or your phone contacts, then you’ve likely used   OAuth 2.0. This standard provides secure delegated access. That means an application can take actions or access resources from a server on behalf of the user, without them having to share their credentials. It does this by allowing the identity provider (IdP) to issue tokens to third-party applications with the user’s approval.
 
@@ -132,11 +130,9 @@ Security Assertion Markup Language (SAML) is an open standard that allows identi
 - SAML: You’ve more likely experienced SAML authentication in action in the work environment. For example, it enables you to log into your corporate intranet or IdP and then access numerous additional services, such as Salesforce, Box, or Workday, without having to re-enter your credentials. SAML is an XML-based standard for exchanging authentication and authorization data between IdPs and service providers to verify the user’s identity and permissions, then grant or deny their access to services.
 
 
-
 - https://www.okta.com/identity-101/whats-the-difference-between-oauth-openid-connect-and-saml/
 
 
-------------------------------------
 ### The Difference Between JWT and OAUTH
 
 -  https://github.com/vaquarkhan/vaquarkhan/wiki/JWT-vs-OAuth
@@ -148,12 +144,46 @@ Security Assertion Markup Language (SAML) is an open standard that allows identi
 ### The Difference Between LDAP and SAML SSO
 
 - https://jumpcloud.com/blog/difference-ldap-saml-sso#:~:text=When%20it%20comes%20to%20their,cloud%20and%20other%20web%20applications.
+- 
+------------------------------------
+
+## Springboot 
+
+
+
+ ### Code-example
+
+![Alt Text](https://ih0.redbubble.net/image.475329521.8750/ra%2Clongsleeve%2Cx925%2C101010%3A01c5ca27c6%2Cfront-c%2C210%2C180%2C210%2C230-bg%2Cf8f8f8.lite-1.jpg)
+
+
+
+No                  |  url
+------------------- | -------------
+1                   | - https://github.com/vaquarkhan/okta-spring-boot-saml-example
+2                   | - https://github.com/rwinch/spring-security-saml2-okta
+3                   | - https://github.com/vaquarkhan/sso-okta-spring-boot
+4                   | - https://github.com/vaquarkhan/facebook-oauth2-login-using-spring-boot
+5                   | - https://github.com/vaquarkhan/spring-boot-security-oauth2-google
+6                   | - https://github.com/vaquarkhan/okta-spring-logout-example
+7                   | - https://github.com/oktadeveloper/okta-spring-boot-oauth-example
+8                   | - https://github.com/oktadeveloper/okta-spring-boot-authz-server-example
+9                   | - https://github.com/oktadeveloper/okta-spring-boot-app-with-auth-example
+10                  | - https://github.com/oktadeveloper/okta-spring-boot-oauth2-pkce-example
+10                  | - https://github.com/oktadeveloper/okta-spring-security-authentication-example
+
+
 ------------------------------------
 
 
-------------------------------------
-
-
+- https://aws.amazon.com/premiumsupport/knowledge-center/cognito-okta-saml-identity-provider/
+- https://dzone.com/articles/tldr-database-authentication-spring-security-saml
+- https://dzone.com/articles/get-started-with-spring-boot-saml-and-okta
+- https://aws.amazon.com/premiumsupport/knowledge-center/cognito-okta-saml-identity-provider/
+- https://spring.io/projects/spring-security-saml
+- https://spring.io/projects/spring-security-kerberos
+- https://spring.io/projects/spring-security-oauth
+- https://developer.okta.com/blog/2019/10/30/java-oauth2
+- https://developer.okta.com/blog/2019/05/22/java-microservices-spring-boot-spring-cloud
 - https://oauth2.thephpleague.com/
 - https://www.tutorialspoint.com/oauth2.0
 - https://www.deviantart.com/developers/authentication
