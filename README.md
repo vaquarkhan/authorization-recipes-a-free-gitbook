@@ -192,3 +192,4 @@ No                  |  url
 - https://developer.okta.com/blog/2019/10/21/illustrated-guide-to-oauth-and-oidc
 - https://www.ubisecure.com/about/resources/saml-oauth-openid-connect/?utm_source=ubisecure&utm_medium=blog
 - https://developer.okta.com/docs/concepts/saml/
+- https://www.okta.com/blog/2021/04/okta-amazon-web-services-aws-automate-aws-sso-with-okta-workflows/
