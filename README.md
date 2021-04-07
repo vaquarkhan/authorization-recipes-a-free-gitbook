@@ -102,7 +102,8 @@ Client - An application which accesses protected resources on behalf of the reso
             - Resource owner password credentials grant
             - Refresh grant
 
-![Alt Text]https://oauth2.thephpleague.com/images/grants.min.svg)
+![Alt Text](https://oauth2.thephpleague.com/images/grants.min.svg)
+
 
 Grant flow (courtesy: oauth2.thephpleague.com).
 
