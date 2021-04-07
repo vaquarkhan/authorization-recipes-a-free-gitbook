@@ -305,7 +305,7 @@ No                  |  url
 
 
 ------------------------------------
-
+## Reference
 
 - https://aws.amazon.com/premiumsupport/knowledge-center/cognito-okta-saml-identity-provider/
 - https://dzone.com/articles/tldr-database-authentication-spring-security-saml
@@ -332,6 +332,6 @@ No                  |  url
 ![Alt Text](http://bestanimations.com/Animals/Birds/Doves/animated-dove-gif-5.gif)
 
 
-### Note :Draft version.
-
-#### You are welcome to participate and contribute to build one page microservice index.If you didn't find your name in attribution plz raise issue in github ,if claim is valid  will add  attribution on content .    
+### Note :
+- Draft version.
+- You are welcome to contribute and participate in the building of the one page index for authorization. If you fail to find your name in the attribution, plz raise an issue on GitHub . If the claim is valid will add attribution to the content.     
