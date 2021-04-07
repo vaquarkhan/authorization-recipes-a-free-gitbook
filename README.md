@@ -177,7 +177,7 @@ SAML single sign-on works by transferring the user's identity from one place (th
     
     - The identity provider builds the authentication response in the form of a XML-document containing the user's username or email-address, signs it using a X.509 certificate and posts this information to the service provider.
     
-   - The service provider (which already knowns the identity provider and has a certificate fingerprint) retrieves the authentication response and validates it using the certificate fingerprint. The identity of the user is established
+    - The service provider (which already knowns the identity provider and has a certificate fingerprint) retrieves the authentication response and validates it using the certificate fingerprint. The identity of the user is established
 
 
 - https://developer.okta.com/docs/concepts/saml/
