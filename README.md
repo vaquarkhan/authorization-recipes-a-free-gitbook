@@ -173,11 +173,14 @@ SAML single sign-on works by transferring the user's identity from one place (th
   
      - The application identifies the user origin (either by application subdomain, user IP address or similar) and redirects the user back to the identity provider, asking  for authentication. This is the authentication request.
   
-    - The user either has a session with the identity provider already, or established one by logging into the identity provider.
+     - The user either has a session with the identity provider already, or established one by logging into the identity provider.
     
-    - The identity provider builds the authentication response in the form of a XML-document containing the user's username or email-address, signs it using a X.509 certificate and posts this information to the service provider.
+     - The identity provider builds the authentication response in the form of a XML-document containing the user's username or email-address, signs it using a X.509 certificate and posts this information to the service provider.
     
-    - The service provider (which already knowns the identity provider and has a certificate fingerprint) retrieves the authentication response and validates it using the certificate fingerprint. The identity of the user is established
+     - The service provider (which already knowns the identity provider and has a certificate fingerprint) retrieves the authentication response and validates it using the certificate fingerprint. The identity of the user is established
+
+![Alt Text](https://images.idgesg.net/images/article/2017/10/security-assertion-markup-language-saml-explainer-100738529-large.jpg)
+
 
 
 - https://developer.okta.com/docs/concepts/saml/
