@@ -325,3 +325,13 @@ No                  |  url
 - https://www.ubisecure.com/about/resources/saml-oauth-openid-connect/?utm_source=ubisecure&utm_medium=blog
 - https://developer.okta.com/docs/concepts/saml/
 - https://www.okta.com/blog/2021/04/okta-amazon-web-services-aws-automate-aws-sso-with-okta-workflows/
+
+
+------------------------------------------------------------------------------------------------------
+
+![Alt Text](http://bestanimations.com/Animals/Birds/Doves/animated-dove-gif-5.gif)
+
+
+### Note :Draft version.
+
+#### You are welcome to participate and contribute to build one page microservice index.If you didn't find your name in attribution plz raise issue in github ,if claim is valid  will add  attribution on content .    
