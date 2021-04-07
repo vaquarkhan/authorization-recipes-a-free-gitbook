@@ -5,9 +5,9 @@
 
 ## Table of Contents
 
-* [Definition](#Authentication vs Authentication)
+* [Definition](#Authentication-vs-Authentication)
 * [Authentication-Methods](#Authentication-Methods)
-* [Token type](#Token type)
+* [Token type](#Token-type)
 
 -----------------------------------------------------
 
