@@ -96,12 +96,17 @@ The OAuth 2.0 authorization framework is a protocol that allows a user to grant 
 Client - An application which accesses protected resources on behalf of the resource owner (such as a user). The client could be hosted on a server, desktop, mobile or other device.
 
 - Grant - A grant is a method of acquiring an access token, following are grant type.
-            - Authorization code grant
-            - Implicit grant
-            - Client credentials grant
-            - Resource owner password credentials grant
-            - Refresh grant
 
+            - Authorization code grant : The Authorization Code grant type is used by confidential and public clients to exchange an authorization code for an access token.
+
+            - Client credentials grant : The Client Credentials grant type is used by clients to obtain an access token outside of the context of a user,This is typically used by clients to access resources about themselves rather than to access a user's resources.
+                                 
+            - Device code grant : The Device Code grant type is used by browserless or input-constrained devices in the device flow to exchange a previously obtained device code for an access token.
+ 
+            - Refresh grant : The Refresh Token grant type is used by clients to exchange a refresh token for an access token when the access token has expired.
+
+- https://oauth.net/2/grant-types/
+      
 ![Alt Text](https://oauth2.thephpleague.com/images/grants.min.svg)
 
 
