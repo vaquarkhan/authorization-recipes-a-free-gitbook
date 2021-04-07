@@ -1,3 +1,36 @@
+## Authentication vs Authentication
+
+- Authentication means confirmation of your identity, and Authorization means allowing access to the system.
+- Authentication is a type of process which ascertains that somebody is what they claim they’re. And Authorization refers to a set
+
+![Alt Text](https://media.geeksforgeeks.org/wp-content/uploads/20190606141632/Untitled-Diagram-2019-06-06T141540.818.png)
+
+* Authentication: Refers to proving correct identity 
+* Authorization: Refers to allowing a certain action
+
+## Authentication Methods
+
+         - Basic : Sender places a username:password into the request header. The username and password are encoded with Base64
+                  Encoding technique that converts the username and password into a set of 64 characters to ensure safe transmission.
+                  Example :Authorization: Basic bG9sOnNlY3VyZQ==
+
+         - Bearer : Client must send this token in the Authorization header when making requests to protected resources
+                    Bearer authentication scheme was originally created as part of OAuth 2.0 in RFC-6750 but is sometimes also used on its own.
+                    Example:  Authorization: Bearer <token>
+
+        - API Keys :  A unique generated value is assigned to each first time user,Every call user need to pass security key to get access.
+                      API key should send in the Authorization header
+                      Example: Authorization: Apikey 1234567890abcdef
+
+         - OAuth : OAuth is a standard that apps can use to provide client applications with “secure delegated access”.
+                   OAuth works over HTTPS and authorizes devices, APIs, servers, and applications with access tokens rather than credentials.
+
+## Token type :
+    
+    - JWT :JWT Tokens are actually a full JSON Object that has been base64 encoded and then signed with either a symmetric shared key or using a public/private key pair.
+    
+    - Opaque Tokens: opaque token has a format that is not intended to be read by you.opaque token is simply a primary key that references a database entry which has the     data. Fast key value stores like Redis or any cache
+    
 
 ## JWT:
 JSON Web Tokens are an open, industry standard RFC 7519 method for representing claims securely between two parties.
@@ -5,8 +38,9 @@ JSON Web Tokens are an open, industry standard RFC 7519 method for representing 
 
 ![Alt Text](https://backstage.forgerock.com/docs/am/7/oauth2-guide/images/oauth2-jwt-bearer-authn.svg)
 
-### Token 
+
 ![Alt Text](https://research.securitum.com/wp-content/uploads/sites/2/2019/10/jwt_ng1_en.png)
+
 The issuer returns a signed JWT to the client. The JWT must contain, at least, the following claims in the payload:
 
          - iss. Specifies the unique identifier of the JWT issuer. This could also be the client, or a third party.
