@@ -163,9 +163,10 @@ SAML is basically a session cookie in your browser that gives you access to weba
 
 ## SAML single sign-on (SSO). 
 
-- SAML: You’ve more likely experienced SAML authentication in action in the work environment. For example, it enables you to log into your corporate intranet or IdP and then        access numerous additional services, such as Salesforce, Box, or Workday, without having to re-enter your credentials. SAML is an XML-based standard for exchanging            authentication and authorization data between IdPs and service providers to verify the user’s identity and permissions, then grant or deny their access to services.
-
-      - SAML single sign-on works by transferring the user's identity from one place (the identity provider) to another (the service provider). This is done through an     exchange of digitally signed XML documents. Consider the following scenario: A user is logged into a system, which acts as an identity provider. The user would like to log in to a remote application such as a support application or accounting application (i.e. the service provider). The following happens:
+- SAML: You’ve more likely experienced SAML authentication in action in the work environment. For example, it enables you to log into your corporate intranet or IdP and then        access numerous additional services, such as Salesforce, Box, or Workday, without having to re-enter your credentials. SAML is an XML-based standard for exchanging            authentication and authorization data between IdPs and service providers to verify the user’s identity and permissions, then grant or deny their access to services.    
+      SAML single sign-on works by transferring the user's identity from one place (the identity provider) to another (the service provider). This is done through an          exchange of digitally signed XML documents. Consider the following scenario: A user is logged into a system, which acts as an identity provider. The user would like to log in to a remote application such as a support application or accounting application (i.e. the service provider). 
+      
+  The following happens:
 
      - The users clicks on the link to the application, either on the corporate intranet, a bookmark or similar and the application loads.
   
