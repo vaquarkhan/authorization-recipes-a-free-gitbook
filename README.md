@@ -12,8 +12,9 @@
 * [OAuth-2.0](#OAuth-2.0)
 * [SAML](#SAML)
 * [OKTA](#OKTA)
-* [differentiation](#differentiation)
+* [Differentiation](#Differentiation)
 * [Springboot-code-example](#Springboot-code-example)
+* [PCF-Configure-Okta-as-an-Identity-Provider](#PCF-Configure-Okta-as-an-Identity-Provider) 
 
 
 -----------------------------------------------------
@@ -280,6 +281,16 @@ Okta is one trusted platform to secure every identity, from customers to your wo
 - https://jumpcloud.com/blog/difference-ldap-saml-sso#:~:text=When%20it%20comes%20to%20their,cloud%20and%20other%20web%20applications.
 - 
 ------------------------------------
+
+## PCF Configure Okta as an Identity Provider
+
+- https://docs.run.pivotal.io/sso/okta/config-okta.html
+- https://docs.run.pivotal.io/sso/index.html
+- https://developer.okta.com/blog/2018/02/13/secure-spring-microservices-with-oauth
+- 
+
+------------------------------------
+
 
 ## Springboot code-example
 
