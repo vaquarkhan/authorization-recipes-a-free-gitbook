@@ -156,18 +156,41 @@ Okta is one trusted platform to secure every identity, from customers to your wo
 
 ------------------------------------
 ## SAML
+is an open standard for exchanging authentication and authorization data between parties, in particular, between an identity provider and a service provider. 
 Security Assertion Markup Language (SAML) is an open standard that allows identity providers (IdP) to pass authorization credentials to service providers (SP). What that jargon means is that you can use one set of credentials to log into many different websites.
 
+SAML is basically a session cookie in your browser that gives you access to webapps. It’s limited in the kinds of device profiles and scenarios you might want to do outside of a web browser.
+
+## SAML single sign-on (SSO). 
+
+- SAML: You’ve more likely experienced SAML authentication in action in the work environment. For example, it enables you to log into your corporate intranet or IdP and then        access numerous additional services, such as Salesforce, Box, or Workday, without having to re-enter your credentials. SAML is an XML-based standard for exchanging            authentication and authorization data between IdPs and service providers to verify the user’s identity and permissions, then grant or deny their access to services.
+
+      - SAML single sign-on works by transferring the user's identity from one place (the identity provider) to another (the service provider). This is done through an     exchange of digitally signed XML documents. Consider the following scenario: A user is logged into a system, which acts as an identity provider. The user would like to log in to a remote application such as a support application or accounting application (i.e. the service provider). The following happens:
+
+     - The users clicks on the link to the application, either on the corporate intranet, a bookmark or similar and the application loads.
+  
+     - The application identifies the user origin (either by application subdomain, user IP address or similar) and redirects the user back to the identity provider, asking  for authentication. This is the authentication request.
+  
+    - The user either has a session with the identity provider already, or established one by logging into the identity provider.
+    
+    - The identity provider builds the authentication response in the form of a XML-document containing the user's username or email-address, signs it using a X.509 certificate and posts this information to the service provider.
+    
+   - The service provider (which already knowns the identity provider and has a certificate fingerprint) retrieves the authentication response and validates it using the certificate fingerprint. The identity of the user is established
+
+
 - https://developer.okta.com/docs/concepts/saml/
+- https://www.varonis.com/blog/what-is-saml/
+- https://docs.oasis-open.org/security/saml/v2.0/saml-profiles-2.0-os.pdf
+- https://youtu.be/S9BpeOmuEz4
 
 ------------------------------------
 ### The Difference among OAuth 2.0 vs OpenID Connect vs SAML
 
-- OAuth 2.0: If you’ve ever signed up to a new application and agreed to let it automatically source new contacts via Facebook or your phone contacts, then you’ve likely used   OAuth 2.0. This standard provides secure delegated access. That means an application can take actions or access resources from a server on behalf of the user, without them having to share their credentials. It does this by allowing the identity provider (IdP) to issue tokens to third-party applications with the user’s approval.
+- OAuth 2.0: If you’ve ever signed up to a new application and agreed to let it automatically source new contacts via Facebook or your phone contacts, then you’ve likely used              OAuth 2.0. This standard provides secure delegated access. That means an application can take actions or access resources from a server on behalf of the user,                without them having to share their credentials. It does this by allowing the identity provider (IdP) to issue tokens to third-party applications with the user’s              approval.
 
-- OpenID Connect: If you’ve used your Google to sign in to applications like YouTube, or Facebook to log into an online shopping cart, then you’re familiar with this authentication option. OpenID Connect is an open standard that organizations use to authenticate users. IdPs use this so that users can sign in to the IdP, and then access other websites and apps without having to log in or share their sign-in information. 
+- OpenID Connect: If you’ve used your Google to sign in to applications like YouTube, or Facebook to log into an online shopping cart, then you’re familiar with this                           authentication option. OpenID Connect is an open standard that organizations use to authenticate users. IdPs use this so that users can sign in to the IdP,                   and then access other websites and apps without having to log in or share their sign-in information. 
 
-- SAML: You’ve more likely experienced SAML authentication in action in the work environment. For example, it enables you to log into your corporate intranet or IdP and then access numerous additional services, such as Salesforce, Box, or Workday, without having to re-enter your credentials. SAML is an XML-based standard for exchanging authentication and authorization data between IdPs and service providers to verify the user’s identity and permissions, then grant or deny their access to services.
+
 
 
 - https://www.okta.com/identity-101/whats-the-difference-between-oauth-openid-connect-and-saml/
