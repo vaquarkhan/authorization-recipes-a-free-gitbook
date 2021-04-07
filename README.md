@@ -13,6 +13,8 @@
 * [SAML](#SAML)
 * [OKTA](#OKTA)
 * [differentiation](#differentiation)
+* [Springboot-code-example](#Springboot-code-example)
+
 
 -----------------------------------------------------
 
@@ -209,7 +211,7 @@ Okta is one trusted platform to secure every identity, from customers to your wo
 
 - https://developer.okta.com/docs/guides/
 
-## Okta SSO by implementing SAML 2.0
+### Okta SSO by implementing SAML 2.0
   
   -  Go to Admin panel and edit the SAML settings to include a Group attribute statements https://www.okta.com/okta-administrator-experience/
 
@@ -279,11 +281,7 @@ Okta is one trusted platform to secure every identity, from customers to your wo
 - 
 ------------------------------------
 
-## Springboot 
-
-
-
- ### Code-example
+## Springboot code-example
 
 ![Alt Text](https://ih0.redbubble.net/image.475329521.8750/ra%2Clongsleeve%2Cx925%2C101010%3A01c5ca27c6%2Cfront-c%2C210%2C180%2C210%2C230-bg%2Cf8f8f8.lite-1.jpg)
 
