@@ -5,9 +5,14 @@
 
 ## Table of Contents
 
-* [Definition](#Authentication-vs-Authentication)
+* [Authentication-vs-Authentication](#Authentication-vs-Authentication)
 * [Authentication-Methods](#Authentication-Methods)
 * [Token type](#Token-type)
+* [JWT](#JWT)
+* [OAuth-2.0](#OAuth-2.0)
+* [SAML](#SAML)
+* [OKTA](#OKTA)
+* [differentiation](#differentiation)
 
 -----------------------------------------------------
 
@@ -168,7 +173,7 @@ Security Assertion Markup Language (SAML) is an open standard that allows identi
 
 SAML is basically a session cookie in your browser that gives you access to webapps. It’s limited in the kinds of device profiles and scenarios you might want to do outside of a web browser.
 
-## SAML single sign-on (SSO). 
+### SAML single sign-on (SSO). 
 
 You’ve more likely experienced SAML authentication in action in the work environment. For example, it enables you to log into your corporate intranet or IdP and then        access numerous additional services, such as Salesforce, Box, or Workday, without having to re-enter your credentials. SAML is an XML-based standard for exchanging            authentication and authorization data between IdPs and service providers to verify the user’s identity and permissions, then grant or deny their access to services.
 
@@ -246,6 +251,8 @@ Okta is one trusted platform to secure every identity, from customers to your wo
 - https://www.youtube.com/watch?v=F_k6E2JgfCs
 - 
 ------------------------------------
+## Differentiation
+
 ### The Difference among OAuth 2.0 vs OpenID Connect vs SAML
 
 - OAuth 2.0: If you’ve ever signed up to a new application and agreed to let it automatically source new contacts via Facebook or your phone contacts, then you’ve likely used              OAuth 2.0. This standard provides secure delegated access. That means an application can take actions or access resources from a server on behalf of the user,                without them having to share their credentials. It does this by allowing the identity provider (IdP) to issue tokens to third-party applications with the user’s              approval.
