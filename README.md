@@ -1,3 +1,17 @@
+
+![Alt Text](https://images.mydoorsign.com/img/lg/S/Restricted-Access-Engraved-Sign-SE-2825.png)
+
+
+
+## Table of Contents
+
+* [Definition](#Authentication vs Authentication)
+* [Authentication-Methods](#Authentication-Methods)
+* [Token type](#Token type)
+
+-----------------------------------------------------
+
+
 ## Authentication vs Authentication
 
 - Authentication means confirmation of your identity, and Authorization means allowing access to the system.
