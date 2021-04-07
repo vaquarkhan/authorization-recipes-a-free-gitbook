@@ -147,13 +147,6 @@ Scopes are what you see on the authorization screens when an app requests permis
 - https://darutk.medium.com/diagrams-and-movies-of-all-the-oauth-2-0-flows-194f3c3ade85
 
 
--------------------------------------------
-## OKTA
-
-Okta is one trusted platform to secure every identity, from customers to your workforce. Okta connects any person with any application on any device. It's an enterprise-grade, identity management service, built for the cloud, but compatible with many on-premises applications.
-
-- https://developer.okta.com/docs/guides/
-
 ------------------------------------
 ## SAML
 is an open standard for exchanging authentication and authorization data between parties, in particular, between an identity provider and a service provider. 
@@ -187,7 +180,57 @@ SAML single sign-on works by transferring the user's identity from one place (th
 - https://www.varonis.com/blog/what-is-saml/
 - https://docs.oasis-open.org/security/saml/v2.0/saml-profiles-2.0-os.pdf
 - https://youtu.be/S9BpeOmuEz4
+- https://developer.okta.com/docs/concepts/saml/
 
+
+-------------------------------------------
+## OKTA
+
+Okta is one trusted platform to secure every identity, from customers to your workforce. Okta connects any person with any application on any device. It's an enterprise-grade, identity management service, built for the cloud, but compatible with many on-premises applications.
+
+- https://developer.okta.com/docs/guides/
+
+## Okta SSO by implementing SAML 2.0
+  
+  -  Go to Admin panel and edit the SAML settings to include a Group attribute statements https://www.okta.com/okta-administrator-experience/
+
+
+                       <saml2p:Response 
+                               xmlns:saml2p="urn:oasis:names:tc:SAML:2.0:protocol" 
+                               ......
+                               ......
+                               <saml2p:Status 
+                                   xmlns:saml2p="urn:oasis:names:tc:SAML:2.0:protocol">
+                                   <saml2p:StatusCode 
+                                       Value="urn:oasis:names:tc:SAML:2.0:status:Success"/>
+                               </saml2p:Status>
+                               <saml2:Assertion 
+                                   ......
+                                   ......
+                                   xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion" 
+                                   <saml2:AttributeStatement 
+                                       xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">
+                                       <saml2:Attribute 
+                                           Name="groups" 
+                                           NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified">
+                                           <saml2:AttributeValue 
+                                               xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+                                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                                               xsi:type="xs:string">admins_group_1
+                                           </saml2:AttributeValue>
+                                           <saml2:AttributeValue 
+                                               xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+                                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                                               xsi:type="xs:string">it_admins
+                                           </saml2:AttributeValue>
+                                       </saml2:Attribute>
+                                   </saml2:AttributeStatement>
+                               </saml2:Assertion>
+                           </saml2p:Response>
+
+
+- https://www.youtube.com/watch?v=F_k6E2JgfCs
+- 
 ------------------------------------
 ### The Difference among OAuth 2.0 vs OpenID Connect vs SAML
 
