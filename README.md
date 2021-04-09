@@ -336,7 +336,7 @@ No                  |  url
 - https://www.okta.com/blog/2021/04/okta-amazon-web-services-aws-automate-aws-sso-with-okta-workflows/
 - https://github.com/apigee/apigee-partner-se-bootcamp/blob/master/labs/API%20Services%20Lesson%205%20-%20Add%20Security%20Policies/README.md
 - https://github.com/apigee/apijam/blob/master/Archives/Archived_10-18-2019/Labs/Core/Lab%204%20API%20Security%20-%20Securing%20APIs%20with%20API%20Keys/README.md
-
+- https://github.com/apigee/api-platform-samples/blob/master/sample-proxies/oauth-client-credentials/README.md
 
 ------------------------------------------------------------------------------------------------------
 
