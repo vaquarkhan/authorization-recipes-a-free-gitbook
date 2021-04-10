@@ -127,6 +127,8 @@ Client - An application which accesses protected resources on behalf of the reso
  
             - Refresh grant : The Refresh Token grant type is used by clients to exchange a refresh token for an access token when the access token has expired.
 
+![Alt Text](https://github.com/vaquarkhan/authorization-recipes-a-free-gitbook/blob/main/Grant-type.PNG)
+
 - https://oauth.net/2/grant-types/
       
 ![Alt Text](https://oauth2.thephpleague.com/images/grants.min.svg)
